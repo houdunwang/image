@@ -34,7 +34,7 @@ class Image {
 	 *
 	 * @param array $config
 	 */
-	public function init( array $config ) {
+	public function config( array $config ) {
 		$this->config = $config;
 	}
 

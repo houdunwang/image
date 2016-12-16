@@ -17,7 +17,7 @@ class ImageProvider extends ServiceProvider {
 	public $defer = true;
 
 	public function boot() {
-		\Image::init( c( 'image' ) );
+		\Image::config( c( 'image' ) );
 	}
 
 	public function register() {
