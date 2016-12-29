@@ -9,20 +9,19 @@
  * '-------------------------------------------------------------------*/
 namespace houdunwang\image;
 
-use hdphp\kernel\ServiceProvider;
+use houdunwang\framework\build\Provider;
 
-class ImageProvider extends ServiceProvider {
+class ImageProvider extends Provider {
 
 	//延迟加载
 	public $defer = true;
 
 	public function boot() {
-		\Image::config( c( 'image' ) );
 	}
 
 	public function register() {
-		$this->app->single( 'Image', function ( $app ) {
-			return new Image( $app );
+		$this->app->single( 'Image', function () {
+			return new Image();
 		} );
 	}
 }

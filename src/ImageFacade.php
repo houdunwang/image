@@ -9,9 +9,10 @@
  * '-------------------------------------------------------------------*/
 namespace houdunwang\image;
 
-use hdphp\kernel\ServiceFacade;
 
-class ImageFacade extends ServiceFacade {
+use houdunwang\framework\build\Facade;
+
+class ImageFacade extends Facade {
 	public static function getFacadeAccessor() {
 		return 'Image';
 	}
