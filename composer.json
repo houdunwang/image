@@ -1,7 +1,6 @@
 {
   "name": "houdunwang/image",
   "description": "图片组件提供了缩略图、水印等图像处理功能",
-  "type": "project",
   "keywords": [
     "houdunwang",
     "hdphp",
